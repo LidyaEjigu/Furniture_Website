@@ -1,14 +1,4 @@
-let menu=document.querySelector('#menu-icon');
-let navbar=document.querySelector('.navbar');
-
-menu.onclick = () =>{
-    navbar.classList.toggle('active');
-}
-window.onscroll = () =>{
-    navbar.classList.remove('active');
-}
-
-const path = require('path');
-
-
-
+function toggleMenu() {
+    var menu = document.querySelector('.navbar');
+    menu.style.display = (menu.style.display === 'none') ? 'block' : 'none';
+  }
